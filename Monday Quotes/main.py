@@ -37,7 +37,7 @@ if response_Ninja.status_code == 200:
     #category = quote_data[0]["category"]
     
     # if monday call send_mail function, pass parameters
-    if day_of_week == 6:
+    if day_of_week == 0:
         send_mail(received_quote=quote, received_author=author)
 
 else:
